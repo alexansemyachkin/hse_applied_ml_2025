@@ -7,7 +7,7 @@ from pathlib import Path
 
 st.set_page_config(page_title="Car Price Prediction", layout="wide")
 
-MODEL_DIR = Path(__file__).resolve().parent
+MODEL_DIR = Path(__file__).resolve().parent / "models"
 MODEL_PATH = MODEL_DIR / "model.pkl"
 VIZ_PREP_PATH = MODEL_DIR / "vizualization_preprocessor.pkl"
 FEATURE_NAMES_IN_PATH = MODEL_DIR / "feature_names_in.pkl"
